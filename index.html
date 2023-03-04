@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="card" id="element-to-hide">
+          <img class="icon" src="images/icon-star.svg" alt="#" />
+          <div>
+            <h1 class="card__heading">How did we do?</h1>
+          </div>
+          <p class="card__body">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <ol class="card__ratings">
+            <li class="card__ratings-rating myChoice" id="choice1">1</li>
+            <li class="card__ratings-rating myChoice" id="choice2">2</li>
+            <li class="card__ratings-rating myChoice" id="choice3">3</li>
+            <li class="card__ratings-rating myChoice" id="choice4">4</li>
+            <li class="card__ratings-rating myChoice" id="choice5">5</li>
+          </ol>
+          <input
+            type="hidden"
+            id="clickedChoice"
+            name="clickedChoice"
+            value=""
+          />
+          <button class="btn" id="btn" type="submit">Submit</button>
+        </div>
+        <div class="card-thanks" id="element-to-show" style="display: none">
+          <div class="thanksImg-container">
+            <img
+              class="thanksImg"
+              src="images/illustration-thank-you.svg"
+              alt="#"
+            />
+          </div>
+          <p class="card-rating">
+            You selected &nbsp;<span id="rateChoice"></span> out of 5
+          </p>
+          <h1 class="card__heading-rating">Thank you!</h1>
+          <p class="card__body-rating">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="/scripts.js"></script>
+  </body>
+</html>
